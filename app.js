@@ -4,7 +4,7 @@ function getJokes(e){
     const number = document.querySelector('input[type=number]').value;
 
 
-    fetch(`http://api.icndb.com/jokes/${number}`)
+    fetch(`https://api.icndb.com/jokes/${number}`)
     .then(function(response){
         console.log(response);
         return response.json();
