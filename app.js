@@ -14,7 +14,8 @@ function getJokes(e){
         let output="";
 
         data.value.forEach(joke => {
-          output += `<li>${joke.joke}</li>`;  
+          output += `<li>${joke.joke}</li>`;
+          console.log(output);
         });
         
         document.querySelector(".joke").innerHTML=output;
